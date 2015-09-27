@@ -1,4 +1,3 @@
 Project 1: Prefix Match
 =====
-The instructions given were: <br>
-<i>The only functionality requirement is that, after loading the provided index.html HTML file in a browser, one may begin typing a word into the text field and for each letter input a drop-down list is displayed showing at most ten words from the provided dictionary, sorted lexicographically, which contain the input word as a prefix. If no words match, then no words should be displayed. Your specific task is to create a JavaScript module containing an implementation of a trie data structure to be used as the foundation of the autocomplete functionality.</i>
+See assignment instructions <a href="https://stellar.mit.edu/S/course/6/fa15/6.170/courseMaterial/topics/topic1/project/noname/text">here</a>. The files ```controller.js```, ```index.css```, and ```words.js``` were provided by the course staff. ```index.html``` was also provided but it required some changes.
