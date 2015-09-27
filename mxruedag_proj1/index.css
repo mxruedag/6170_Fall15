@@ -1,0 +1,37 @@
+#results-list {
+  margin-left: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 80%;
+  font-size: 20px;
+}
+
+#results-list li {
+  list-style-type: none;
+}
+
+#results-list li:hover {
+  background: #110D3B;
+  color: #FFF;
+  cursor: pointer;
+}
+
+#search-term-input {
+  display: block;
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 80%;
+  font-family: sans-serif;
+  font-size: 16px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+#search-term-input:focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}

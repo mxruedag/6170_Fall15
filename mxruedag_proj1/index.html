@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>6.170 Assignment 1: Prefix Match</title>
+  <link rel="stylesheet" href="./index.css" type="text/css" charset="utf-8">
+</head>
+
+<body>
+
+  <input id="search-term-input" type="text" placeholder="Type something...">
+  <ul id="results-list"></ul>
+
+  <script src="./words.js" charset="utf-8"></script>
+  <script src="./controller.js" charset="utf-8"></script>
+  <script src="./node.js" charset="utf-8"></script>
+  <script src="./trie.js" charset="utf-8"></script>
+  <script>
+
+  	document.addEventListener('DOMContentLoaded', function () {
+
+      var trie = Trie();
+      for (var i = 0; i < WORDS.length; i++){
+      	trie.insertWord(WORDS[i]);
+      }
+
+	  CONTROLLER.registerAutocompleteListener(function (word) {
+
+	  	var NUM_WORDS_TO_SHOW = 10;
+	  	var i, randomWord;
+
+	  	var wordsWithPrefix = trie.getWordsWithPrefix(word);
+
+	  	CONTROLLER.clearSearchResults();
+
+	  	for (var i = 0; i < NUM_WORDS_TO_SHOW && i < wordsWithPrefix.length; ++i){
+	  	  CONTROLLER.appendToSearchResults(wordsWithPrefix[i]);
+	  	}
+	  	
+      });
+
+  	});
+
+  </script>
+</body>
+</html>
