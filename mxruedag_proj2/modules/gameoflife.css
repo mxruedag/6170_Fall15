@@ -1,0 +1,21 @@
+table.GameWidget {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+table.GameWidget tr {
+  border-top: 1px solid #000;
+  font-weight: bold;
+}
+
+table.GameWidget td.life {
+  height: 10px;
+  width: 10px;
+  background: red;
+}
+
+table.GameWidget td.dead {
+  height: 10px;
+  width: 10px;
+  background: green;
+}
