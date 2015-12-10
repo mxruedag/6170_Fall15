@@ -1,0 +1,14 @@
+<div id="signin">
+  <a href="#" id="home-link">Back to Home</a>
+  <h1>Sign in</h1>
+  <div class="error">
+    {{#if error}}
+      {{error}}
+    {{/if}}
+  </div>
+  <form id="signin-form">
+    <div>Username: <input type="text" name="username" required /></div>
+    <div>Password: <input type="password" name="password" required /></div>
+    <input type="submit" />
+  </form>
+</div>

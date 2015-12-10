@@ -1,0 +1,18 @@
+<div id="feed">
+
+  <p>Welcome, {{currentUser}} (<a href="#" id="logout-link">logout</a>)</p>
+
+  <h1>Your feed</h1>
+  <button id="all-button">All tweets</button>
+  <div>
+    <div class="error"></div>
+    <div class="notification"></div>
+  </div>
+
+  {{#each tweets}}
+    {{> tweet}}
+  {{else}}
+    <p><em>No tweets yet!</em></p>
+  {{/each}}
+
+</div>

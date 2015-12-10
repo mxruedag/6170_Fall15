@@ -1,0 +1,15 @@
+<div id="register">
+  <a href="#" id="home-link">Back to Home</a>
+  <h1>Register</h1>
+  <div class="error">
+    {{#if error}}
+      {{error}}
+    {{/if}}
+  </div>
+  <form id="register-form">
+    <div>Username: <input type="text" name="username" required /></div>
+    <div>Password: <input type="password" name="password" required /></div>
+    <div>Confirm Password: <input type="password" name="confirm" required /></div>
+    <input type="submit" />
+  </form>
+</div>

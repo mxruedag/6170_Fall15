@@ -1,0 +1,20 @@
+<div class="tweet" data-tweet-id={{_id}} data-poster-username={{poster}} data-creator-username={{creator}}>
+  {{#if isRetweet}}
+  	<b>Retweet by: {{poster}}</b>
+  	{{#unless isUsernamePoster}}
+  	  <button id="follow-poster-button">Follow {{poster}}</button>
+  	{{/unless}}
+  {{/if}}
+  <br>
+  <b>Written by: {{creator}}</b>
+  {{#unless isUsernameCreator}}
+    <button id="follow-creator-button">Follow {{creator}}</button>
+  {{/unless}}
+  <p>{{content}}</p>
+  {{#if isUsernamePoster}}
+  	<a href="#" class="delete-tweet">Delete</a>
+  {{/if}}
+  {{#unless isUsernameCreator}}
+    <a href="#" class="retweet">Retweet</a>
+  {{/unless}}
+</div>

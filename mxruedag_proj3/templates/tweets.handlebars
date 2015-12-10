@@ -1,0 +1,22 @@
+<div id="tweets">
+
+  <p>Welcome, {{currentUser}} (<a href="#" id="logout-link">logout</a>)</p>
+  
+  <div>
+    <div class="error"></div>
+    <div class="notification"></div>
+    <label for="new-tweet-input">Add a new tweet:</label>
+    <input type="text" id="new-tweet-input" />
+    <button id="submit-new-tweet">Add</button>
+  </div>
+
+  <h1>All tweets</h1>
+  <button id="feed-button">My feed</button>
+
+  {{#each tweets}}
+    {{> tweet}}
+  {{else}}
+    <p><em>No tweets yet!</em></p>
+  {{/each}}
+
+</div>

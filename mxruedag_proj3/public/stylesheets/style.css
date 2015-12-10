@@ -1,0 +1,41 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.notification {
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.tweet {
+  margin: 16px 0;
+}
+
+.tweet p {
+  margin: 4px 0;
+}
+
+#main-container {
+	padding-left: 50px;
+	padding-top: 50px;
+}
+
+#footer {
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
